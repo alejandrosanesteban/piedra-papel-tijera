@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Piedra, Papel o Tijera</h1>
+       <div class="game-box">
+
+            <div class="selecciones">
+                <div class="img-container user">
+                    <img src="interrogacion.jpg" id="imagenUsuario">
+                </div>
+                <div class="marcador">
+                    <h3>Resultado:</h3>
+                    <p>0 - 0</p>
+                    <p class="rojo">hlh</p>
+                </div>
+                <div class="img-container cpu">
+                    <img src="interrogacion.jpg" id="imagenCpu">
+                </div>
+            </div>
+
+            <div class="botones">
+                <h3>Elige una opcion:</h3>
+                <button onclick="activar('piedra')" id="btnpiedra">Piedra</button>
+                <button onclick="activar('papel')" id="btnpapel">Papel</button>
+                <button onclick="activar('tijeras')" id="btntijeras">Tijeras</button>
+                <!-- <button class="jugar">Jugar</button> -->
+            </div>
+
+            <div class="game-over">
+                <span id="resultado"></span>
+            </div>
+
+       </div>
+    </div>
+
+<!-- ===================  DAR colores A LOS BOTONES ,  el de jugar con color azul(accion)=============== -->
+
+    <script src="script.js"></script>
+</body>
+</html>
